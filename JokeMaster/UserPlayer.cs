@@ -12,14 +12,14 @@ namespace JokeMaster
 
         public UserPlayer(params string[] paths)
         {
-            players.Add(new MyPlayer(@"Sounds\BadumTish.wav"));
-            players.Add(new MyPlayer(@"Sounds\FyutHa.wav"));
-            players.Add(new MyPlayer(@"Sounds\SadTrombone.wav"));
-            players.Add(new MyPlayer(@"Sounds\Chastushka.wav"));
-            players.Add(new MyPlayer(@"Sounds\DMX.wav"));
-            players.Add(new MyPlayer(@"Sounds\Vitas.wav"));
-            players.Add(new MyPlayer(@"Sounds\Beavis.wav"));
-            players.Add(new MyPlayer(@"Sounds\Leviosa.wav"));
+
+            if (paths != null)
+            {
+                foreach(string path in paths)
+                {
+                    players.Add(new MyPlayer(path));
+                }
+            }
         }
 
         public void PlaySound(int i)

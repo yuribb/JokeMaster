@@ -138,6 +138,9 @@
     <Content Include="Sounds\FyutHa.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sounds\Kosoy.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Sounds\Leviosa.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

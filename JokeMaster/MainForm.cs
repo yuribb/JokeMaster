@@ -18,7 +18,8 @@ namespace JokeMaster
                 @"Sounds\DMX.wav",
                 @"Sounds\Vitas.wav",
                 @"Sounds\Beavis.wav",
-                @"Sounds\Leviosa.wav");
+                @"Sounds\Leviosa.wav",
+                @"Sounds\Kosoy.wav");
         }
 
         private void BtBadumTish_Click(object sender, EventArgs e)
@@ -60,6 +61,11 @@ namespace JokeMaster
         private void BtLeviosa_Click(object sender, EventArgs e)
         {
             Player.PlaySound(7);
+        }
+
+        private void BtKosoy_Click(object sender, EventArgs e)
+        {
+            Player.PlaySound(8);
         }
     }
 }

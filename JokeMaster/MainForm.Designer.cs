@@ -36,8 +36,9 @@
             this.btDimitrius = new System.Windows.Forms.Button();
             this.btBash = new System.Windows.Forms.Button();
             this.tlp = new System.Windows.Forms.TableLayoutPanel();
-            this.btBeavis = new System.Windows.Forms.Button();
             this.btLeviosa = new System.Windows.Forms.Button();
+            this.btBeavis = new System.Windows.Forms.Button();
+            this.btKosoy = new System.Windows.Forms.Button();
             this.tlp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.btBadumTish.Location = new System.Drawing.Point(5, 5);
             this.btBadumTish.Margin = new System.Windows.Forms.Padding(5);
             this.btBadumTish.Name = "btBadumTish";
-            this.btBadumTish.Size = new System.Drawing.Size(224, 42);
+            this.btBadumTish.Size = new System.Drawing.Size(224, 49);
             this.btBadumTish.TabIndex = 0;
             this.btBadumTish.Text = "Смешная шутка";
             this.btBadumTish.UseVisualStyleBackColor = true;
@@ -56,10 +57,10 @@
             // btFyutHa
             // 
             this.btFyutHa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btFyutHa.Location = new System.Drawing.Point(5, 57);
+            this.btFyutHa.Location = new System.Drawing.Point(5, 64);
             this.btFyutHa.Margin = new System.Windows.Forms.Padding(5);
             this.btFyutHa.Name = "btFyutHa";
-            this.btFyutHa.Size = new System.Drawing.Size(224, 42);
+            this.btFyutHa.Size = new System.Drawing.Size(224, 49);
             this.btFyutHa.TabIndex = 1;
             this.btFyutHa.Text = "Нормальная шутка";
             this.btFyutHa.UseVisualStyleBackColor = true;
@@ -68,10 +69,10 @@
             // btSadTrombone
             // 
             this.btSadTrombone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btSadTrombone.Location = new System.Drawing.Point(5, 109);
+            this.btSadTrombone.Location = new System.Drawing.Point(5, 123);
             this.btSadTrombone.Margin = new System.Windows.Forms.Padding(5);
             this.btSadTrombone.Name = "btSadTrombone";
-            this.btSadTrombone.Size = new System.Drawing.Size(224, 42);
+            this.btSadTrombone.Size = new System.Drawing.Size(224, 49);
             this.btSadTrombone.TabIndex = 2;
             this.btSadTrombone.Text = "Тупая шутка";
             this.btSadTrombone.UseVisualStyleBackColor = true;
@@ -80,10 +81,10 @@
             // btChastushka
             // 
             this.btChastushka.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btChastushka.Location = new System.Drawing.Point(5, 161);
+            this.btChastushka.Location = new System.Drawing.Point(5, 182);
             this.btChastushka.Margin = new System.Windows.Forms.Padding(5);
             this.btChastushka.Name = "btChastushka";
-            this.btChastushka.Size = new System.Drawing.Size(224, 42);
+            this.btChastushka.Size = new System.Drawing.Size(224, 49);
             this.btChastushka.TabIndex = 3;
             this.btChastushka.Text = "Частушка";
             this.btChastushka.UseVisualStyleBackColor = true;
@@ -92,10 +93,10 @@
             // btDimitrius
             // 
             this.btDimitrius.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btDimitrius.Location = new System.Drawing.Point(5, 213);
+            this.btDimitrius.Location = new System.Drawing.Point(5, 241);
             this.btDimitrius.Margin = new System.Windows.Forms.Padding(5);
             this.btDimitrius.Name = "btDimitrius";
-            this.btDimitrius.Size = new System.Drawing.Size(224, 42);
+            this.btDimitrius.Size = new System.Drawing.Size(224, 49);
             this.btDimitrius.TabIndex = 4;
             this.btDimitrius.Text = "Тема Димана";
             this.btDimitrius.UseVisualStyleBackColor = true;
@@ -105,10 +106,10 @@
             // 
             this.btBash.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btBash.Image = ((System.Drawing.Image)(resources.GetObject("btBash.Image")));
-            this.btBash.Location = new System.Drawing.Point(5, 265);
+            this.btBash.Location = new System.Drawing.Point(5, 300);
             this.btBash.Margin = new System.Windows.Forms.Padding(5);
             this.btBash.Name = "btBash";
-            this.btBash.Size = new System.Drawing.Size(224, 42);
+            this.btBash.Size = new System.Drawing.Size(224, 49);
             this.btBash.TabIndex = 5;
             this.btBash.UseVisualStyleBackColor = true;
             this.btBash.Click += new System.EventHandler(this.BtBash_Click);
@@ -117,6 +118,7 @@
             // 
             this.tlp.ColumnCount = 1;
             this.tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp.Controls.Add(this.btKosoy, 0, 8);
             this.tlp.Controls.Add(this.btLeviosa, 0, 7);
             this.tlp.Controls.Add(this.btBadumTish, 0, 0);
             this.tlp.Controls.Add(this.btBash, 0, 5);
@@ -130,48 +132,60 @@
             this.tlp.Margin = new System.Windows.Forms.Padding(0);
             this.tlp.Name = "tlp";
             this.tlp.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.tlp.RowCount = 8;
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlp.Size = new System.Drawing.Size(234, 436);
+            this.tlp.RowCount = 9;
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tlp.Size = new System.Drawing.Size(234, 549);
             this.tlp.TabIndex = 6;
-            // 
-            // btBeavis
-            // 
-            this.btBeavis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btBeavis.Image = ((System.Drawing.Image)(resources.GetObject("btBeavis.Image")));
-            this.btBeavis.Location = new System.Drawing.Point(5, 317);
-            this.btBeavis.Margin = new System.Windows.Forms.Padding(5);
-            this.btBeavis.Name = "btBeavis";
-            this.btBeavis.Size = new System.Drawing.Size(224, 42);
-            this.btBeavis.TabIndex = 6;
-            this.btBeavis.UseVisualStyleBackColor = true;
-            this.btBeavis.Click += new System.EventHandler(this.BtBeavis_Click);
             // 
             // btLeviosa
             // 
             this.btLeviosa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btLeviosa.Image = ((System.Drawing.Image)(resources.GetObject("btLeviosa.Image")));
-            this.btLeviosa.Location = new System.Drawing.Point(5, 369);
+            this.btLeviosa.Location = new System.Drawing.Point(5, 418);
             this.btLeviosa.Margin = new System.Windows.Forms.Padding(5);
             this.btLeviosa.Name = "btLeviosa";
-            this.btLeviosa.Size = new System.Drawing.Size(224, 47);
+            this.btLeviosa.Size = new System.Drawing.Size(224, 49);
             this.btLeviosa.TabIndex = 7;
             this.btLeviosa.UseVisualStyleBackColor = true;
             this.btLeviosa.Click += new System.EventHandler(this.BtLeviosa_Click);
+            // 
+            // btBeavis
+            // 
+            this.btBeavis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btBeavis.Image = ((System.Drawing.Image)(resources.GetObject("btBeavis.Image")));
+            this.btBeavis.Location = new System.Drawing.Point(5, 359);
+            this.btBeavis.Margin = new System.Windows.Forms.Padding(5);
+            this.btBeavis.Name = "btBeavis";
+            this.btBeavis.Size = new System.Drawing.Size(224, 49);
+            this.btBeavis.TabIndex = 6;
+            this.btBeavis.UseVisualStyleBackColor = true;
+            this.btBeavis.Click += new System.EventHandler(this.BtBeavis_Click);
+            // 
+            // btKosoy
+            // 
+            this.btKosoy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btKosoy.Location = new System.Drawing.Point(5, 477);
+            this.btKosoy.Margin = new System.Windows.Forms.Padding(5);
+            this.btKosoy.Name = "btKosoy";
+            this.btKosoy.Size = new System.Drawing.Size(224, 52);
+            this.btKosoy.TabIndex = 8;
+            this.btKosoy.Text = "Косой мудила";
+            this.btKosoy.UseVisualStyleBackColor = true;
+            this.btKosoy.Click += new System.EventHandler(this.BtKosoy_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 436);
+            this.ClientSize = new System.Drawing.Size(234, 549);
             this.Controls.Add(this.tlp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -194,6 +208,7 @@
         private System.Windows.Forms.TableLayoutPanel tlp;
         private System.Windows.Forms.Button btLeviosa;
         private System.Windows.Forms.Button btBeavis;
+        private System.Windows.Forms.Button btKosoy;
     }
 }
 
