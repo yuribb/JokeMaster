@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.InteropServices;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace JokeMaster
@@ -10,6 +12,7 @@ namespace JokeMaster
         public MainForm()
         {
             InitializeComponent();
+            
             Player = new UserPlayer(
                 @"Sounds\BadumTish.wav", 
                 @"Sounds\FyutHa.wav",
@@ -19,7 +22,8 @@ namespace JokeMaster
                 @"Sounds\Vitas.wav",
                 @"Sounds\Beavis.wav",
                 @"Sounds\Leviosa.wav",
-                @"Sounds\Kosoy.wav");
+                @"Sounds\Kosoy.wav",
+                @"Sounds\Slavyanka.mp3");
         }
 
         private void BtBadumTish_Click(object sender, EventArgs e)
@@ -66,6 +70,21 @@ namespace JokeMaster
         private void BtKosoy_Click(object sender, EventArgs e)
         {
             Player.PlaySound(8);
+        }
+
+        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MessageBox.Show(e.KeyChar.ToString());
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show(e.KeyCode.ToString());
+        }
+
+        private void BtSlavyanka_Click(object sender, EventArgs e)
+        {
+            Player.PlaySound(9);
         }
     }
 }
