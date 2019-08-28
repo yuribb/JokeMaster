@@ -22,7 +22,7 @@ namespace JokeMaster
                 @"Sounds\Vitas.wav",
                 @"Sounds\Beavis.wav",
                 @"Sounds\Leviosa.wav",
-                @"Sounds\Kosoy.wav",
+                @"Sounds\NeNeNe.wav",
                 @"Sounds\Slavyanka.mp3");
         }
 
@@ -67,7 +67,7 @@ namespace JokeMaster
             Player.PlaySound(7);
         }
 
-        private void BtKosoy_Click(object sender, EventArgs e)
+        private void BtNeNeNe_Click(object sender, EventArgs e)
         {
             Player.PlaySound(8);
         }

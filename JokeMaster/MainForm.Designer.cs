@@ -36,10 +36,10 @@
             this.btDimitrius = new System.Windows.Forms.Button();
             this.btBash = new System.Windows.Forms.Button();
             this.tlp = new System.Windows.Forms.TableLayoutPanel();
-            this.btKosoy = new System.Windows.Forms.Button();
+            this.btSlavyanka = new System.Windows.Forms.Button();
+            this.btNeNeNe = new System.Windows.Forms.Button();
             this.btLeviosa = new System.Windows.Forms.Button();
             this.btBeavis = new System.Windows.Forms.Button();
-            this.btSlavyanka = new System.Windows.Forms.Button();
             this.tlp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,7 +120,7 @@
             this.tlp.ColumnCount = 1;
             this.tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp.Controls.Add(this.btSlavyanka, 0, 9);
-            this.tlp.Controls.Add(this.btKosoy, 0, 8);
+            this.tlp.Controls.Add(this.btNeNeNe, 0, 8);
             this.tlp.Controls.Add(this.btLeviosa, 0, 7);
             this.tlp.Controls.Add(this.btBadumTish, 0, 0);
             this.tlp.Controls.Add(this.btBash, 0, 5);
@@ -148,20 +148,34 @@
             this.tlp.Size = new System.Drawing.Size(234, 549);
             this.tlp.TabIndex = 6;
             // 
-            // btKosoy
+            // btSlavyanka
             // 
-            this.btKosoy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btKosoy.Location = new System.Drawing.Point(5, 429);
-            this.btKosoy.Margin = new System.Windows.Forms.Padding(5);
-            this.btKosoy.Name = "btKosoy";
-            this.btKosoy.Size = new System.Drawing.Size(224, 43);
-            this.btKosoy.TabIndex = 8;
-            this.btKosoy.Text = "Косой мудила";
-            this.btKosoy.UseVisualStyleBackColor = true;
-            this.btKosoy.Click += new System.EventHandler(this.BtKosoy_Click);
+            this.btSlavyanka.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSlavyanka.Location = new System.Drawing.Point(5, 482);
+            this.btSlavyanka.Margin = new System.Windows.Forms.Padding(5);
+            this.btSlavyanka.Name = "btSlavyanka";
+            this.btSlavyanka.Size = new System.Drawing.Size(224, 47);
+            this.btSlavyanka.TabIndex = 9;
+            this.btSlavyanka.Text = "Прощание славянки";
+            this.btSlavyanka.UseVisualStyleBackColor = true;
+            this.btSlavyanka.Click += new System.EventHandler(this.BtSlavyanka_Click);
+            // 
+            // btNeNeNe
+            // 
+            this.btNeNeNe.BackgroundImage = global::JokeMaster.Properties.Resources.vrotmnenogi;
+            this.btNeNeNe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btNeNeNe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btNeNeNe.Location = new System.Drawing.Point(5, 429);
+            this.btNeNeNe.Margin = new System.Windows.Forms.Padding(5);
+            this.btNeNeNe.Name = "btNeNeNe";
+            this.btNeNeNe.Size = new System.Drawing.Size(224, 43);
+            this.btNeNeNe.TabIndex = 8;
+            this.btNeNeNe.UseVisualStyleBackColor = true;
+            this.btNeNeNe.Click += new System.EventHandler(this.BtNeNeNe_Click);
             // 
             // btLeviosa
             // 
+            this.btLeviosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btLeviosa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btLeviosa.Image = ((System.Drawing.Image)(resources.GetObject("btLeviosa.Image")));
             this.btLeviosa.Location = new System.Drawing.Point(5, 376);
@@ -174,6 +188,7 @@
             // 
             // btBeavis
             // 
+            this.btBeavis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btBeavis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btBeavis.Image = ((System.Drawing.Image)(resources.GetObject("btBeavis.Image")));
             this.btBeavis.Location = new System.Drawing.Point(5, 323);
@@ -183,18 +198,6 @@
             this.btBeavis.TabIndex = 6;
             this.btBeavis.UseVisualStyleBackColor = true;
             this.btBeavis.Click += new System.EventHandler(this.BtBeavis_Click);
-            // 
-            // btSlavyanka
-            // 
-            this.btSlavyanka.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btSlavyanka.Location = new System.Drawing.Point(5, 482);
-            this.btSlavyanka.Margin = new System.Windows.Forms.Padding(5);
-            this.btSlavyanka.Name = "btSlavyanka";
-            this.btSlavyanka.Size = new System.Drawing.Size(224, 47);
-            this.btSlavyanka.TabIndex = 9;
-            this.btSlavyanka.Text = "Прощание славянки";
-            this.btSlavyanka.UseVisualStyleBackColor = true;
-            this.btSlavyanka.Click += new System.EventHandler(this.BtSlavyanka_Click);
             // 
             // MainForm
             // 
@@ -225,7 +228,7 @@
         private System.Windows.Forms.TableLayoutPanel tlp;
         private System.Windows.Forms.Button btLeviosa;
         private System.Windows.Forms.Button btBeavis;
-        private System.Windows.Forms.Button btKosoy;
+        private System.Windows.Forms.Button btNeNeNe;
         private System.Windows.Forms.Button btSlavyanka;
     }
 }

@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JokeMaster.ico" />
+    <None Include="Resources\vrotmnenogi.jpg" />
     <Content Include="Sounds\BadumTish.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -171,10 +172,10 @@
     <Content Include="Sounds\Keys\011_Mudila.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sounds\Kosoy.wav">
+    <Content Include="Sounds\Leviosa.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sounds\Leviosa.wav">
+    <Content Include="Sounds\NeNeNe.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sounds\SadTrombone.wav">
